@@ -4,7 +4,9 @@ import AppProvider from "./store/AppProvider";
 import AppContext from "./store/app-context";
 import Weather from "./components/Weather/Weather";
 import Hi from "./components/Hi/Hi";
+import Food from "./components/Food/Food";
 import { Route, Routes, Switch } from "react-router-dom";
+import { useBusinessSearch } from "./hooks/yelp-api/useBusinessSearch";
 
 const api = {
   key: "2a470a5ce69a36ec5dc341371a7e9713",
@@ -42,6 +44,7 @@ function App() {
 
       {/* <SearchBar setQuery={setQuery} query={query} search={search} /> */}
       <Weather weather={weather} />
+      <Food />
     </AppProvider>
   );
 }
