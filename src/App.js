@@ -9,7 +9,6 @@ import { Route, Routes, Switch } from "react-router-dom";
 import { useBusinessSearch } from "./hooks/yelp-api/useBusinessSearch";
 
 const api = {
-  key: "2a470a5ce69a36ec5dc341371a7e9713",
   base: "https://api.openweathermap.org/data/2.5/",
 };
 
